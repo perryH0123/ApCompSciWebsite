@@ -20,7 +20,7 @@ Here, you'll find a small listing of my personal attributes.
       z-index: 99; /* Make sure it does not overlap */
       border: none; /* Remove borders */
       outline: none; /* Remove outline */
-      background-color: ##404040;
+      background-color: #808080;
       color: white; /* Text color */
       cursor: pointer; /* Add a mouse pointer on hover */
       padding: 15px; /* Some padding */
@@ -30,7 +30,7 @@ Here, you'll find a small listing of my personal attributes.
     }
   
     #topButton hover {
-      background-color: #555; /* Add a dark-grey background on hover */
+      background-color: #404040; /* Add a dark-grey background on hover */
       font-color: #ffffff;
     }
   
@@ -59,7 +59,7 @@ Here, you'll find a small listing of my personal attributes.
 
     const scrollFunction = () => {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        topBtn.style.opacity = 0.6;
+        topBtn.style.opacity = 0.8;
       } else {
         topBtn.style.opacity = 0;
       }
