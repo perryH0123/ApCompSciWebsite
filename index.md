@@ -7,7 +7,7 @@ Here, you'll find a small listing of my personal attributes.
 
 <button onclick="topFunction()" id="topButton" title="Go to top">Back to top</button>
 <style>
-  #topButton button{
+  #topButton{
       display: none;
       opacity: 0;
       position: fixed; /* Fixed/sticky position */
@@ -25,7 +25,7 @@ Here, you'll find a small listing of my personal attributes.
       transition: opacity 0.5s linear, background-color 0.5s linear, font-color 0.5s linear;
     }
   
-    #topButton button:hover {
+    #topButton hover {
       background-color: #555; /* Add a dark-grey background on hover */
       font-color: #ffffff;
     }
