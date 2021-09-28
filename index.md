@@ -21,9 +21,8 @@ Here, you'll find a small listing of my personal attributes.
       padding: 15px; /* Some padding */
       border-radius: 5px; /* Rounded corners */
       font-size: 18px; /* Increase font size */
-      visibility: hidden;
       opacity: 0;
-      transition: visibility 0s, opacity 0.5s linear, background-color 0.5s linear, font-color 0.5s linear;
+      transition: opacity 0.5s linear, background-color 0.5s linear, font-color 0.5s linear;
     }
   
     #topButton:hover {
@@ -39,10 +38,8 @@ Here, you'll find a small listing of my personal attributes.
 
     const scrollFunction = () => {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        topBtn.style.visibility = "visible";
         topBtn.style.opacity = 1;
       } else {
-        topBtn.style.visibility = "hidden";
         topBtn.style.opacity = 0;
       }
     }
