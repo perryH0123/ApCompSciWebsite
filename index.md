@@ -8,7 +8,7 @@ Here, you'll find a small listing of my personal attributes.
 <button onclick="topFunction()" id="topButton" title="Go to top">Back to top</button>
 <style>
   #topButton {
-      display: none; /* Hidden by default */
+      display: block; /* Hidden by default */
       position: fixed; /* Fixed/sticky position */
       bottom: 20px; /* Place the button at the bottom of the page */
       right: 30px; /* Place the button 30px from the right */
@@ -38,7 +38,7 @@ Here, you'll find a small listing of my personal attributes.
 
     const scrollFunction = () => {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        topBtn.style.opacity = 1;
+        topBtn.style.opacity = 0.6;
       } else {
         topBtn.style.opacity = 0;
       }
