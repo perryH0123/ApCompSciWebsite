@@ -15,14 +15,13 @@ Here, you'll find a small listing of my personal attributes.
       z-index: 99; /* Make sure it does not overlap */
       border: none; /* Remove borders */
       outline: none; /* Remove outline */
-      background-color: #ffffff;
+      background-color: #808080;
       color: white; /* Text color */
       cursor: pointer; /* Add a mouse pointer on hover */
       padding: 15px; /* Some padding */
       border-radius: 5px; /* Rounded corners */
       font-size: 18px; /* Increase font size */
-      opacity: 0;
-      transition-property: opacity, background-color, font-color;
+      transition-property: opacity;
       transition-duration: 0.5s;
     }
   
