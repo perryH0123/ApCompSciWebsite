@@ -29,7 +29,7 @@ Here, you'll find a small listing of my personal attributes.
       transition: opacity 0.5s linear, background-color 0.5s linear, font-color 0.5s linear;
     }
   
-    #topButton hover {
+    #topButton:hover {
       background-color: #404040; /* Add a dark-grey background on hover */
       font-color: #ffffff;
     }
@@ -56,7 +56,19 @@ Here, you'll find a small listing of my personal attributes.
       height: 8px;
       background: #34bfed;
       width: 0%;
-    }
+    
+     #resetColors {
+        width: 50%;
+        margin: auto;
+        background: #adadad;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.5s linear; 
+     }
+    
+     #resetColors:hover {
+        background: #636363;
+     }
   
 </style>
 <script>
@@ -85,6 +97,27 @@ Here, you'll find a small listing of my personal attributes.
       const scrolled = (winScroll / height) * 100;
       document.getElementById("progressBar").style.width = scrolled + "%";
     }
+    
+    colorBtn = document.getElementById("resetColors");
+    
+    function pageScroll() {
+    window.scrollBy(0,1);
+    scrolldelay = setTimeout(pageScroll,10);
+     }
+    
+    const reversePageScroll = () => {
+        window.scrollBy(0,-1);
+        scrolldelay = setTimeout(pageScroll,10);
+    }
+    
+    const resetColorScheme = () => {
+        colorBtn.value = "おまえは もう しんでる"
+        while (document.body.scrollTop > 5){
+        reversePageScroll();
+        alert("work in progress");
+        }
+     }
+ }
 </script>
 
 ## Languages
@@ -139,7 +172,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
 
 ![Random Smiling Guy](/assets/images/istockphoto-1158245623-612x612.jpg)
 
-![Great yearbook picture](/assets/images/image0.jpg)
+![Great yearbook picture](/assets/images/image0.JPG)
 
 <br>
 ## Checklist of stuff left to do
@@ -149,3 +182,6 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
 - [x] Two headings
 - [x] Link to another webpage
 - [x] Modify CSS  
+- [ ] Add JS elements
+
+<button onclick="resetColorScheme()" id="resetColors" title="Reset original page color scheme">Reset original page color scheme</button>
