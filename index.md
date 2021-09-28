@@ -16,20 +16,11 @@ Here, you'll find a small listing of my personal attributes.
       border: none; /* Remove borders */
       outline: none; /* Remove outline */
       background-color: #ffffff;
-      opacity: 0.6;/
       color: white; /* Text color */
       cursor: pointer; /* Add a mouse pointer on hover */
       padding: 15px; /* Some padding */
       border-radius: 5px; /* Rounded corners */
       font-size: 18px; /* Increase font size */
-      -webkit-transition: opacity 2s ease-in;
-      -moz-transition: opacity 2s ease-in;       
-      -o-transition: opacity 2s ease-in;
-      -ms-transition: opacity 2s ease-in;
-      transition: opacity 2s ease-in;
-    }
-
-    #topButton button {
       visibility: hidden;
       opacity: 0;
       transition: visibility 0s, opacity 0.5s linear, background-color 0.5s linear, font-color 0.5s linear;
