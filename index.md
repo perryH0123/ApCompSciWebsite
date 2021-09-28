@@ -22,7 +22,8 @@ Here, you'll find a small listing of my personal attributes.
       border-radius: 5px; /* Rounded corners */
       font-size: 18px; /* Increase font size */
       opacity: 0;
-      transition: opacity 0.5s linear, background-color 0.5s linear, font-color 0.5s linear;
+      transition-property: opacity, background-color, font-color;
+      transition-duration: 0.5s;
     }
   
     #topButton:hover {
