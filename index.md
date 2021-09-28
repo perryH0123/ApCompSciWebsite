@@ -35,6 +35,8 @@ Here, you'll find a small listing of my personal attributes.
     }
   
     .progress-container {
+      position: fixed;
+      top: 0px;
       width: 100%;
       height: 8px;
       background: #fff;
