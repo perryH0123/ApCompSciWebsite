@@ -44,7 +44,7 @@ Here, you'll find a small listing of my personal attributes.
   
     .progress-bar {
       height: 8px;
-      background: ##34bfed;
+      background: #34bfed;
       width: 0%;
     }
   
