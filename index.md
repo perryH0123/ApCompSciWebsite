@@ -111,7 +111,7 @@ Here, you'll find a small listing of my personal attributes.
     }
     
     const resetColorScheme = () => {
-        colorBtn.value = "おまえは もう しんでる"
+        //colorBtn.value = "おまえは もう しんでる"
         while (document.body.scrollTop > 5){
             reversePageScroll();
         }
