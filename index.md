@@ -3,6 +3,62 @@ Welcome to my site!
 
 Here, you'll find a small listing of my personal attributes.
 
+---
+
+<button onclick="topFunction()" id="topButton" title="Go to top">Back to top</button>
+<style>
+  #topButton {
+      display: none; /* Hidden by default */
+      position: fixed; /* Fixed/sticky position */
+      bottom: 20px; /* Place the button at the bottom of the page */
+      right: 30px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: none; /* Remove borders */
+      outline: none; /* Remove outline */
+      background-color: #ffffff;
+      opacity: 0.6;/
+      color: white; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 15px; /* Some padding */
+      border-radius: 5px; /* Rounded corners */
+      font-size: 18px; /* Increase font size */
+      -webkit-transition: opacity 2s ease-in;
+      -moz-transition: opacity 2s ease-in;       
+      -o-transition: opacity 2s ease-in;
+      -ms-transition: opacity 2s ease-in;
+      transition: opacity 2s ease-in;
+    }
+    #topButton button.load {
+    opacity: 1;
+    } 
+
+    #topButton:hover {
+      background-color: #555; /* Add a dark-grey background on hover */
+    }
+</style>
+<script>
+    topBtn = document.getElementById("topButton");
+    
+    document.getElementById("topButton").children[0].className += " load";
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    const scrollFunction = () => {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    const topFunction = () => {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+
 ## Languages
 
 - English
@@ -64,4 +120,4 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
 - [x] Two images
 - [x] Two headings
 - [x] Link to another webpage
-- [ ] Modify CSS  
+- [x] Modify CSS  
