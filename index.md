@@ -101,8 +101,8 @@ Here, you'll find a small listing of my personal attributes.
     colorBtn = document.getElementById("resetColors");
     
     function pageScroll() {
-    window.scrollBy(0,1);
-    scrolldelay = setTimeout(pageScroll,10);
+        window.scrollBy(0,1);
+        scrolldelay = setTimeout(pageScroll,10);
      }
     
     const reversePageScroll = () => {
@@ -113,10 +113,9 @@ Here, you'll find a small listing of my personal attributes.
     const resetColorScheme = () => {
         colorBtn.value = "おまえは もう しんでる"
         while (document.body.scrollTop > 5){
-        reversePageScroll();
+            reversePageScroll();
+        }
         alert("work in progress");
-        }
-        }
      }
  }
 </script>
