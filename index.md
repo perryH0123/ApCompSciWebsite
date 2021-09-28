@@ -8,6 +8,8 @@ Here, you'll find a small listing of my personal attributes.
 <button onclick="topFunction()" id="topButton" title="Go to top">Back to top</button>
 <style>
   #topButton {
+      display: block;
+      opacity: 0;
       position: fixed; /* Fixed/sticky position */
       bottom: 20px; /* Place the button at the bottom of the page */
       right: 30px; /* Place the button 30px from the right */
@@ -20,8 +22,7 @@ Here, you'll find a small listing of my personal attributes.
       padding: 15px; /* Some padding */
       border-radius: 5px; /* Rounded corners */
       font-size: 18px; /* Increase font size */
-      transition-property: opacity;
-      transition-duration: 0.5s;
+      transition: opacity 0.5s linear, background-color 0.5s linear, font-color 0.5s linear;
     }
   
     #topButton:hover {
