@@ -39,7 +39,7 @@ Here, you'll find a small listing of my personal attributes.
 <script>
     topBtn = document.getElementById("topButton");
     
-    document.getElementById("topButton").children[0].className += " load";
+    document.getElementById("topButton") += " load";
 
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
