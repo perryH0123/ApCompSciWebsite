@@ -52,7 +52,13 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
 - Being bad at video games and subsequently having anger management problems
 
 ## Some images (to fulfill the grading requriements)
-![]
-### Support or Contact
+![Random Smiling Guy] (../assets/images/istockphoto-1158245623-612x612.jpg)
+![Pretty Sky] (../assets/images/IMG-4661.jpg)
+<br>
+## Checklist of stuff left to do
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- [x] A clear topic
+- [x] Two images
+- [x] Two headings
+- [x] Link to another webpage
+- [ ] Modify CSS  
