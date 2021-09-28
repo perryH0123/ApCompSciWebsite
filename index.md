@@ -21,7 +21,7 @@ Here, you'll find a small listing of my personal attributes.
       padding: 15px; /* Some padding */
       border-radius: 5px; /* Rounded corners */
       font-size: 18px; /* Increase font size */
-      transition-property: opacity;
+      transition-property: display;
       transition-duration: 0.5s;
     }
   
@@ -38,9 +38,9 @@ Here, you'll find a small listing of my personal attributes.
 
     const scrollFunction = () => {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        topBtn.style.opacity = 0.6;
+        topBtn.style.opacity = "block";
       } else {
-        topBtn.style.opacity = 0;
+        topBtn.style.opacity = "none;
       }
     }
 
