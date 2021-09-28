@@ -35,6 +35,10 @@ Here, you'll find a small listing of my personal attributes.
     }
   
     .progress-container {
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
       display: block;
       z-index: 98;
       position: fixed;
@@ -45,6 +49,10 @@ Here, you'll find a small listing of my personal attributes.
     }
   
     .progress-bar {
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
       height: 8px;
       background: #34bfed;
       width: 0%;
