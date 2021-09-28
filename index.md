@@ -51,7 +51,7 @@ Here, you'll find a small listing of my personal attributes.
         topBtn.style.visibility = "visible";
         topBtn.style.opacity = 1;
       } else {
-        topBtn.style.visibility: "hidden";
+        topBtn.style.visibility = "hidden";
         topBtn.style.opacity = 0;
       }
     }
