@@ -116,6 +116,7 @@ Here, you'll find a small listing of my personal attributes.
         reversePageScroll();
         alert("work in progress");
         }
+        }
      }
  }
 </script>
