@@ -28,12 +28,16 @@ Here, you'll find a small listing of my personal attributes.
       -ms-transition: opacity 2s ease-in;
       transition: opacity 2s ease-in;
     }
-    #topButton button.load {
-    opacity: 1;
-    } 
 
+    #topButton button {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear, background-color 0.5s linear, font-color 0.5s linear;
+    }
+  
     #topButton:hover {
       background-color: #555; /* Add a dark-grey background on hover */
+      font-color: #ffffff;
     }
 </style>
 <script>
@@ -44,9 +48,11 @@ Here, you'll find a small listing of my personal attributes.
 
     const scrollFunction = () => {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        topBtn.style.display = "block";
+        topBtn.style.visibility = "visible";
+        topBtn.style.opacity = 1;
       } else {
-        topBtn.style.display = "none";
+        topBtn.style.visibility: "hidden";
+        topBtn.style.opacity = 0;
       }
     }
 
