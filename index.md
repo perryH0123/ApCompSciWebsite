@@ -1,3 +1,7 @@
+<div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+ </div>
+
 # Perry Han
 Welcome to my site!
 
@@ -29,12 +33,25 @@ Here, you'll find a small listing of my personal attributes.
       background-color: #555; /* Add a dark-grey background on hover */
       font-color: #ffffff;
     }
+  
+    .progress-container {
+      width: 100%;
+      height: 8px;
+      background: #fff;
+    }
+  
+    .progress-bar {
+      height: 8px;
+      background: ##34bfed;
+      width: 0%;
+    }
+  
 </style>
 <script>
     topBtn = document.getElementById("topButton");
 
     // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function() {scrollFunction(); updateProgress()};
 
     const scrollFunction = () => {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -48,6 +65,13 @@ Here, you'll find a small listing of my personal attributes.
     const topFunction = () => {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  
+    const updateProgress = () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById("progressBar").style.width = scrolled + "%";
     }
 </script>
 
