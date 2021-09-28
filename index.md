@@ -52,8 +52,11 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
 - Being bad at video games and subsequently having anger management problems
 
 ## Some images (to fulfill the grading requriements)
+
 ![Random Smiling Guy] (ApCompSciWebsite/assets/images/istockphoto-1158245623-612x612.jpg)
+
 ![Pretty Sky] (ApCompSciWebsite/assets/images/IMG-4661.jpg)
+
 <br>
 ## Checklist of stuff left to do
 
