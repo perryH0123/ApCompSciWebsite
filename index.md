@@ -19,7 +19,7 @@ Here, you'll find a small listing of my personal attributes.
 - Java
 
 ### Here's an example of some of my messy and jank code!
-```Java
+``` java
 class Utilities {
 public static ArrayList<Product> toProductArrayList(Product[] arr){
     /*List<Product> list = new ArrayList<Product>(Arrays.asList(arr));*/
