@@ -198,7 +198,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
         let scrollTracker = (document.body.scrollTop) ? document.body.scrollTop : document.documentElement.scrollTop;
     
         let timer = setTimeout(reversePageScroll,10);
-        if ((scrollTracker/height) > 0.03){
+        if ((scrollTracker/height) < 0.03){
             if (timer){
                 clearTimeout(timer);
                 timer = 0;
