@@ -200,6 +200,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
     const resetColorScheme = () => {
         //colorBtn.innerHTML = "おまえは もう しんでる"
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        console.log(height);
         while ((document.body.scrollTop/height) > 5 || (document.documentElement.scrollTop/height) > 5){
             reversePageScroll();
         }
