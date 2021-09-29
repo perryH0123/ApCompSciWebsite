@@ -181,11 +181,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
       const scrolled = (winScroll / height) * 100;
       document.getElementById("progressBar").style.width = scrolled + "%";    
     
-      const init = () => {
-        document.getElementById("debugText").innerHTML = scrolled;
-      }
-    
-      window.onload = init;
+      document.getElementById("debugText").innerHTML = scrolled;
           
     }
     
