@@ -205,7 +205,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
         window.scrollBy(0,-3);
         let scrollTracker = (document.body.scrollTop) ? document.body.scrollTop : document.documentElement.scrollTop;
     
-        let timer = setTimeout(reversePageScroll(),1);
+        let timer = setTimeout(reversePageScroll,1);
         if ((scrollTracker/height) < 0.01){
             if (timer){
                 clearTimeout(timer);
