@@ -201,7 +201,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
         //colorBtn.innerHTML = "おまえは もう しんでる"
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         console.log(height);
-        while ((document.body.scrollTop/height) > 5 || (document.documentElement.scrollTop/height) > 5){
+        while ((document.body.scrollTop/height) > 0.05 || (document.documentElement.scrollTop/height) > 0.05){
             reversePageScroll();
         }
         alert("work in progress");
