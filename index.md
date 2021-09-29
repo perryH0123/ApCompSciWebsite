@@ -193,8 +193,15 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
      }
     
     const reversePageScroll = () => {
-        window.scrollBy(0,-1);
-        scrolldelay = setTimeout(reversePageScroll,10);
+        window.scrollBy(0,-3);
+        timer = setTimeout(reversePageScroll,10);
+        if ((document.body.scrollTop/height) > 0.03 && (document.documentElement.scrollTop/height) > 0.03){
+            if (timer){
+                clearTimeout(timer);
+                timer = 0;
+            }
+        }
+        
     }
     
     const resetColorScheme = () => {
