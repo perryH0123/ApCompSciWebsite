@@ -162,7 +162,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
 
         while (currentTime + miliseconds >= new Date().getTime()) {
         }
-    }8?
+    }*/
     
     const updateDebugText = () => debugText.innerHTML = (document.documentElement.scrollTop);
 
