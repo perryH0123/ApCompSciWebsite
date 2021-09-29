@@ -131,6 +131,7 @@ Here, you'll find a small listing of my personal attributes.
 - Markdown
 - Whitney Student
 - Javascript
+- degen :|
 - Python
 - Robot 🤖
 - Java
