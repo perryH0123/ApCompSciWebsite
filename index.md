@@ -99,7 +99,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
     }
     
   #debug {
-        display: block;
+        display: none;
         position: fixed;
         bottom: 20px;
         left: 20px;
@@ -185,7 +185,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
           
     }
     
-    colorBtn = document.getElementById("resetColors");
+    
     
     const pageScroll = () => {
         window.scrollBy(0,1);
@@ -194,10 +194,10 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
     
     const reversePageScroll = () => {
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        window.scrollBy(0,-1);
+        window.scrollBy(0,-3);
         let scrollTracker = (document.body.scrollTop) ? document.body.scrollTop : document.documentElement.scrollTop;
     
-        let timer = setTimeout(reversePageScroll,2);
+        let timer = setTimeout(reversePageScroll,1);
         if ((scrollTracker/height) < 0.01){
             if (timer){
                 clearTimeout(timer);
@@ -208,7 +208,8 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
     }
     
     const resetColorScheme = () => {
-        //colorBtn.innerHTML = "おまえは もう しんでる"
+        const colorBtn = document.getElementById("resetColors");
+        colorBtn.innerHTML = "おまえは もう しんでる"
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         console.log(height);
         //while ((document.body.scrollTop/height) > 0.05 || (document.documentElement.scrollTop/height) > 0.05){
