@@ -236,7 +236,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
             pageHeader[i].style.background_image = "linear-gradient(120deg, #155799, #159957)";
          }
     
-        const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6")l
+        const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
         for(j=0; j<headings.length; j++){
             headings[i].style.transition = "all 1s";
             headings[j].style.color = "#159957";
