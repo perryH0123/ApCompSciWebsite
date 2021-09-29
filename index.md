@@ -187,7 +187,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
     
     colorBtn = document.getElementById("resetColors");
     
-    function pageScroll() {
+    const pageScroll = () => {
         window.scrollBy(0,1);
         scrolldelay = setTimeout(pageScroll,10);
      }
@@ -201,10 +201,10 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
         //colorBtn.innerHTML = "おまえは もう しんでる"
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         console.log(height);
-        while ((document.body.scrollTop/height) > 0.05 || (document.documentElement.scrollTop/height) > 0.05){
+        //while ((document.body.scrollTop/height) > 0.05 || (document.documentElement.scrollTop/height) > 0.05){
             reversePageScroll();
-        }
-        alert("work in progress");
+        //}
+        //alert("work in progress");
      }
  
 </script>
