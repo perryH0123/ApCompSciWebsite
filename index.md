@@ -156,6 +156,13 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
     const topBtn = document.getElementById("topButton");
     const debugText = document.getElementById("debugText");
     
+    const sleep = miliseconds => {
+        const currentTime = new Date().getTime();
+
+        while (currentTime + miliseconds >= new Date().getTime()) {
+        }
+    }
+    
     const updateDebugText = () => debugText.innerHTML = (document.documentElement.scrollTop);
 
     // When the user scrolls down 20px from the top of the document, show the button
@@ -209,12 +216,32 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
     
     const resetColorScheme = () => {
         const colorBtn = document.getElementById("resetColors");
+        //const audio = new Audio('audio_file.mp3');
+        //audio.play();
         colorBtn.innerHTML = "おまえは もう しんでる"
+        sleep(500);
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         console.log(height);
-        //while ((document.body.scrollTop/height) > 0.05 || (document.documentElement.scrollTop/height) > 0.05){
-            reversePageScroll();
-        //}
+        reversePageScroll();
+        /*const setColor = (className, displayValue) => {
+            const elements = document.getElementsByClassName(className);
+            for (i=0; i<items.length; i++){
+                elements[i].style.display = displayValue;
+            }          
+          }*/
+         const pageHeader = documents.getElementsByClassName("");
+         for(i=0; i<pageHeader.length; i++){
+            pageHeader[i].style.transition = "all 1s";
+            pageHeader[i].style.background-color = "#159957";
+            pageHeader[i].style.background-image = "linear-gradient(120deg, #155799, #159957)";
+         }
+    
+        const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6")l
+        for(j=0; j<headings.length; j++){
+            headings[i].style.transition = "all 1s";
+            headings[j].style.color = "#159957";
+        }
+        
         //alert("work in progress");
      }
  
