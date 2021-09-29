@@ -247,7 +247,8 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
                 }
             }
         }
-          reversePageScroll(changeColors);
+          reversePageScroll();
+          changeColors();
         
         //alert("work in progress");
      }
