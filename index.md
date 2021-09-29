@@ -194,11 +194,11 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
     
     const reversePageScroll = () => {
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        window.scrollBy(0,-3);
+        window.scrollBy(0,-1);
         let scrollTracker = (document.body.scrollTop) ? document.body.scrollTop : document.documentElement.scrollTop;
     
-        let timer = setTimeout(reversePageScroll,10);
-        if ((scrollTracker/height) < 0.03){
+        let timer = setTimeout(reversePageScroll,2);
+        if ((scrollTracker/height) < 0.01){
             if (timer){
                 clearTimeout(timer);
                 timer = 0;
