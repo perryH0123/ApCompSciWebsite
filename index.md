@@ -107,7 +107,7 @@ Here, you'll find a small listing of my personal attributes.
     
     const reversePageScroll = () => {
         window.scrollBy(0,-1);
-        scrolldelay = setTimeout(pageScroll,10);
+        scrolldelay = setTimeout(reversePageScroll,10);
     }
     
     const resetColorScheme = () => {
