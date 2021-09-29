@@ -221,7 +221,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
     }
 
     
-    async const resetColorScheme = () => {
+    async function resetColorScheme() => {
         const colorBtn = document.getElementById("resetColors");
         //const audio = new Audio('audio_file.mp3');
         //audio.play();
