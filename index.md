@@ -27,6 +27,7 @@ Here, you'll find a small listing of my personal attributes.
 - Python
 - Robot 🤖
 - Java
+- I need to learn JQuery 😔 dont look at the inline js
 
 ### Here's an example of some of my messy and jank code!
 ``` java
@@ -199,7 +200,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
         scrolldelay = setTimeout(pageScroll,10);
      }
     
-    const reversePageScroll = () => {
+    const reversePageScroll = (callback) => {
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         window.scrollBy(0,-3);
         let scrollTracker = (document.body.scrollTop) ? document.body.scrollTop : document.documentElement.scrollTop;
@@ -210,6 +211,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
                 clearTimeout(timer);
                 timer = 0;
             }
+            reversePageScroll();
         }
         
     }
@@ -219,28 +221,33 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
         //const audio = new Audio('audio_file.mp3');
         //audio.play();
         colorBtn.innerHTML = "おまえは もう しんでる"
-        sleep(500);
+        sleep(2000);
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         console.log(height);
-        reversePageScroll();
+        
         /*const setColor = (className, displayValue) => {
             const elements = document.getElementsByClassName(className);
             for (i=0; i<items.length; i++){
                 elements[i].style.display = displayValue;
             }          
           }*/
-         const pageHeader = document.getElementsByClassName("page-header");
-         for(i=0; i<pageHeader.length; i++){
-            pageHeader[i].style.transition = "all 1s";
-            pageHeader[i].style.background_color = "#159957";
-            pageHeader[i].style.background_image = "linear-gradient(120deg, #155799, #159957)";
-         }
-    
-        const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
-        for(j=0; j<headings.length; j++){
-            headings[i].style.transition = "all 1s";
-            headings[j].style.color = "#159957";
+         const changeColors = () => {
+             const pageHeader = document.getElementsByClassName("page-header");
+             for(i=0; i<pageHeader.length; i++){
+                pageHeader[i].style.transition = "background-color 3s linear, background-image 3s linear";
+                pageHeader[i].style.backgroundColor = "#159957";
+                pageHeader[i].style.backgroundImage = "linear-gradient(120deg, #155799, #159957)";
+             }
+
+            const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+            for(j=0; j<headings.length; j++){
+                if (headings[j].cName != "project-name" || headings[j].cName != "project-tagline"){
+                    headings[i].style.transition = "color 3s linear";
+                    headings[j].style.color = "#159957";
+                }
+            }
         }
+          reversePageScroll(changeColors);
         
         //alert("work in progress");
      }
