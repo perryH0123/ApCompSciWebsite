@@ -10,6 +10,7 @@ Here, you'll find a small listing of my personal attributes.
 ---
 
 <button onclick="topFunction()" id="topButton" title="Go to top">Back to top</button>
+<div id="debug"><p id="debugText">0</p></div>
 <style>
   #topButton{
       display: block;
@@ -87,7 +88,7 @@ Here, you'll find a small listing of my personal attributes.
     const updateDebugText = () => debugText.innerHTML = (document.documentElement.scrollTop);
 
     // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction(); updateProgress(); updateDebugText()};
+    window.onscroll = function() {scrollFunction(); updateProgress()};
 
     const scrollFunction = () => {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -123,7 +124,7 @@ Here, you'll find a small listing of my personal attributes.
     }
     
     const resetColorScheme = () => {
-        colorBtn.innerHTML = "おまえは もう しんでる"
+        //colorBtn.innerHTML = "おまえは もう しんでる"
         while (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5){
             reversePageScroll();
         }
@@ -170,8 +171,6 @@ public static ArrayList<Product> toProductArrayList(Product[] arr){
   }
  }
 ```
-
-<div id="debug"><p id="debugText">0</p></div>
 
 For more details see [the full project](https://replit.com/@PerryHan/Store-Finished#Main.java).
 
