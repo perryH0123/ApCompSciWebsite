@@ -229,7 +229,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
                 elements[i].style.display = displayValue;
             }          
           }*/
-         const pageHeader = documents.getElementsByClassName("");
+         const pageHeader = document.getElementsByClassName("page-header");
          for(i=0; i<pageHeader.length; i++){
             pageHeader[i].style.transition = "all 1s";
             pageHeader[i].style.background_color = "#159957";
