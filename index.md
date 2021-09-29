@@ -157,12 +157,12 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
     const topBtn = document.getElementById("topButton");
     const debugText = document.getElementById("debugText");
     
-    const sleep = miliseconds => {
+    /*const sleep = miliseconds => {
         const currentTime = new Date().getTime();
 
         while (currentTime + miliseconds >= new Date().getTime()) {
         }
-    }
+    }8?
     
     const updateDebugText = () => debugText.innerHTML = (document.documentElement.scrollTop);
 
@@ -215,13 +215,18 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
         }
         
     }
+                                           
+    const sleep = ms => {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
     
-    const resetColorScheme = () => {
+    async const resetColorScheme = () => {
         const colorBtn = document.getElementById("resetColors");
         //const audio = new Audio('audio_file.mp3');
         //audio.play();
         colorBtn.innerHTML = "おまえは もう しんでる"
-        sleep(2000);
+        await sleep(1000);
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         console.log(height);
         
@@ -241,13 +246,14 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
 
             const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
             for(j=0; j<headings.length; j++){
-                if (headings[j].cName != "project-name" || headings[j].cName != "project-tagline"){
-                    headings[i].style.transition = "color 3s linear";
+                if (headings[j].style != #"ffffff"){
+                    headings[j].style.transition = "color 3s linear";
                     headings[j].style.color = "#159957";
                 }
             }
         }
           reversePageScroll();
+          await sleep(2000);
           changeColors();
         
         //alert("work in progress");
