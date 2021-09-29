@@ -46,7 +46,7 @@ Here, you'll find a small listing of my personal attributes.
     .progress-container {
       padding-left: 0px;
       padding-right: 0lx;
-      margin-left: 0px;
+      left: 0px
       margin-right: 0px;
       display: block;
       z-index: 98;
@@ -60,7 +60,7 @@ Here, you'll find a small listing of my personal attributes.
     .progress-bar {
       padding-left: 0px;
       padding-right: 0px;
-      margin-left: 0px;
+      left: 0px;
       margin-right: 0px;
       height: 8px;
       background: #34bfed;
@@ -83,9 +83,11 @@ Here, you'll find a small listing of my personal attributes.
 <script>
     const topBtn = document.getElementById("topButton");
     const debugText = document.getElementById("debugText");
+    
+    const updateDebugText = () => debugText.innerHTML = (document.documentElement.scrollTop);
 
     // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction(); updateProgress() debugText.value=(document.documentElement.scrollTop);};
+    window.onscroll = function() {scrollFunction(); updateProgress(); updateDebugText()};
 
     const scrollFunction = () => {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -121,7 +123,7 @@ Here, you'll find a small listing of my personal attributes.
     }
     
     const resetColorScheme = () => {
-        //colorBtn.value = "おまえは もう しんでる"
+        colorBtn.innerHTML = "おまえは もう しんでる"
         while (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5){
             reversePageScroll();
         }
