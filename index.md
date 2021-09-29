@@ -232,8 +232,8 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
          const pageHeader = documents.getElementsByClassName("");
          for(i=0; i<pageHeader.length; i++){
             pageHeader[i].style.transition = "all 1s";
-            pageHeader[i].style.background-color = "#159957";
-            pageHeader[i].style.background-image = "linear-gradient(120deg, #155799, #159957)";
+            pageHeader[i].style.background_color = "#159957";
+            pageHeader[i].style.background_image = "linear-gradient(120deg, #155799, #159957)";
          }
     
         const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6")l
