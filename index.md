@@ -211,7 +211,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
                 clearTimeout(timer);
                 timer = 0;
             }
-            reversePageScroll();
+            callback();
         }
         
     }
