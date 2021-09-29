@@ -45,8 +45,9 @@ Here, you'll find a small listing of my personal attributes.
     }
   
     .progress-container {
+      display: block;
       padding-left: 0px;
-      padding-right: 0lx;
+      padding-right: 0px;
       left: 0px
       margin-right: 0px;
       display: block;
@@ -59,6 +60,8 @@ Here, you'll find a small listing of my personal attributes.
     }
   
     .progress-bar {
+      display: block;
+      position: fixed;
       padding-left: 0px;
       padding-right: 0px;
       left: 0px;
@@ -109,6 +112,7 @@ Here, you'll find a small listing of my personal attributes.
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       const scrolled = (winScroll / height) * 100;
       document.getElementById("progressBar").style.width = scrolled + "%";
+      document.getElementById("documentText").innerHTML = scrolled;
     }
     
     colorBtn = document.getElementById("resetColors");
