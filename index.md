@@ -179,8 +179,13 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
       const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       const scrolled = (winScroll / height) * 100;
-      document.getElementById("progressBar").style.width = scrolled + "%";
-      document.getElementById("documentText").innerHTML = scrolled;
+      document.getElementById("progressBar").style.width = scrolled + "%";    
+    
+      window.onload = init;
+    
+      const init = () => {
+        document.getElementById("documentText").innerHTML = scrolled;
+      }
     }
     
     colorBtn = document.getElementById("resetColors");
