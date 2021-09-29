@@ -182,7 +182,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
       document.getElementById("progressBar").style.width = scrolled + "%";    
     
       const init = () => {
-        document.getElementById("documentText").innerHTML = scrolled;
+        document.getElementById("debugText").innerHTML = scrolled;
       }
     
       window.onload = init;
