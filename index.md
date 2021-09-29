@@ -28,6 +28,15 @@ Here, you'll find a small listing of my personal attributes.
       font-size: 18px; /* Increase font size */
       transition: opacity 0.5s linear, background-color 0.5s linear, font-color 0.5s linear;
     }
+    
+  #debug {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 99;
+        border: 1px solid black;
+    }
   
     #topButton:hover {
       background-color: #404040; /* Add a dark-grey background on hover */
@@ -72,10 +81,11 @@ Here, you'll find a small listing of my personal attributes.
   
 </style>
 <script>
-    topBtn = document.getElementById("topButton");
+    const topBtn = document.getElementById("topButton");
+    const debugText = document.getElementById("debugText");
 
     // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction(); updateProgress()};
+    window.onscroll = function() {scrollFunction(); updateProgress() debugText.value=(document.documentElement.scrollTop);};
 
     const scrollFunction = () => {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -158,6 +168,8 @@ public static ArrayList<Product> toProductArrayList(Product[] arr){
   }
  }
 ```
+
+<div id="debug"><p id="debugText">0</p></div>
 
 For more details see [the full project](https://replit.com/@PerryHan/Store-Finished#Main.java).
 
