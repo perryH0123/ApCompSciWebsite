@@ -202,10 +202,10 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
     
     const reversePageScroll = (_callback) => {
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        window.scrollBy(0,-3);
+        window.scrollBy(0,-5);
         let scrollTracker = (document.body.scrollTop) ? document.body.scrollTop : document.documentElement.scrollTop;
     
-        let timer = setTimeout(reversePageScroll,1);
+        let timer = setTimeout(reversePageScroll,0.5);
         if ((scrollTracker/height) < 0.01){
             if (timer){
                 clearTimeout(timer);
@@ -246,7 +246,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
 
             const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
             for(j=0; j<headings.length; j++){
-                if (headings[j].style != "#ffffff"){
+                if (headings[j].style.color != "#ffffff"){
                     headings[j].style.transition = "color 3s linear";
                     headings[j].style.color = "#159957";
                 }
