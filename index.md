@@ -156,7 +156,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
         background: #636363;
      }    
      
-    #reloadSuggestion {
+    #reloadSuggestion > p {
         display: none;
         position: fixed;
         opacity: 0.6;
