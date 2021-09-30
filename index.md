@@ -153,6 +153,11 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
      }
   
 </style>
+<audio id="whooshAudio">
+        <source src="https://github.com/perryH0123/ApCompSciWebsite/blob/gh-pages/assets/audio/sfx-whoosh4.mp3"
+                type="audio/mp3">
+   Your browser does not support the audio element.
+</audio>
 <script>
     const topBtn = document.getElementById("topButton");
     const debugText = document.getElementById("debugText");
@@ -223,7 +228,8 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
     
     async function resetColorScheme() {
         const colorBtn = document.getElementById("resetColors");
-        const audio = new Audio('https://github.com/perryH0123/ApCompSciWebsite/blob/gh-pages/assets/audio/sfx-whoosh4.mp3');
+        //const audio = new Audio('https://github.com/perryH0123/ApCompSciWebsite/blob/gh-pages/assets/audio/sfx-whoosh4.mp3');
+        const audio = document.getElementById("whooshAudio");
         const playPromise = audio.play();
         if (playPromise !== undefined){
             playPromise.then(() => {}).catch(error => console.log(error));
