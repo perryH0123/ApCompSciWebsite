@@ -13,6 +13,7 @@ Here, you'll find a small listing of my personal attributes.
 <div id="debug"><p id="debugText">0</p></div>
 <div id="reloadSuggestion" style="display: none;"><p id="reloadText">Reload the page to revert the colors back to the original customized set.</p></div>
 
+
 ## Languages
 
 - English
