@@ -11,7 +11,7 @@ Here, you'll find a small listing of my personal attributes.
 
 <button onclick="topFunction()" id="topButton" title="Go to top">Back to top</button>
 <div id="debug"><p id="debugText">0</p></div>
-<div id="reloadSuggestion"><p id="reloadText">Reload the page to revert the colors back to the customized set.<p></div>
+<div id="reloadSuggestion"><p id="reloadText">Reload the page to revert the colors back to the customized set.</p></div>
 
 ## Languages
 
