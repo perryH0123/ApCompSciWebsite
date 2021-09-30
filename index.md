@@ -11,7 +11,7 @@ Here, you'll find a small listing of my personal attributes.
 
 <button onclick="topFunction()" id="topButton" title="Go to top">Back to top</button>
 <div id="debug"><p id="debugText">0</p></div>
-<div id="reloadSuggestion" style="display: none;"><p id="reloadText">Reload the page to revert the colors back to the customized set.</p></div>
+<div id="reloadSuggestion" style="display: none;"><p id="reloadText">Reload the page to revert the colors back to the original customized set.</p></div>
 
 ## Languages
 
@@ -156,7 +156,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
      }    
      
     #reloadSuggestion {
-        display: none;
+        display: block;
         position: fixed;
         opacity: 0.6;
         bottom: 20px;
@@ -170,6 +170,10 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
         border-radius: 5px;
         font-size: 14px;
         color: white;
+    }
+    
+    #reloadSuggestion p {
+        display: none;
     }
   
 </style>
