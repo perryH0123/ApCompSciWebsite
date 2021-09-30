@@ -288,7 +288,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
         }
           reversePageScroll();
           await sleep(2000);
-          document.getElementById("reloadSuggestion").style.display = "block";
+          document.getElementById("reloadsuggestion").style.display = "block";
           changeColors();
           
        
