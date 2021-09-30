@@ -164,7 +164,6 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
         margin: auto;
         z-index: 99;
         padding: 15px;
-        width = 50%;
         border: none;
         outline: none;
         background-color: #808080;
