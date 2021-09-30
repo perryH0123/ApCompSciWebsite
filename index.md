@@ -3,9 +3,13 @@
  </div>
 
 # Perry Han
-Welcome to my site!
+### Hi.
 
-Here, you'll find a small listing of my personal attributes.
+I'm Perry.
+
+I'm a novice coder, terrible gamer, and an adventurer.
+
+Welcome to my portfolio.
 
 ---
 
@@ -31,6 +35,10 @@ Here, you'll find a small listing of my personal attributes.
         font-size: 14px;
         color: white;
     }
+    
+    html {
+        scroll-behavior: smooth;
+    }
 </style>
 
 
@@ -51,7 +59,7 @@ Here, you'll find a small listing of my personal attributes.
 - Java
 - I need to learn JQuery 😔 dont look at the inline js
 
-### Here's an example of some of my messy and jank code!
+### Example of some of my Java code
 ``` java
 class Utilities {
 public static ArrayList<Product> toProductArrayList(Product[] arr){
@@ -84,13 +92,23 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
 - Video editing
 - Being bad at video games and subsequently having anger management problems
 
-## Some images (to fulfill the grading requriements)
+## I'm currently in
+- AP Computer Scince Principles
+- Robotics
+- CS Club
+- Stock Exchange Club
 
-![Random Smiling Guy](/assets/images/istockphoto-1158245623-612x612.jpg)
+## Some pictures I've recently taken
 
-![Great yearbook picture](/assets/images/image0.JPG)
+![Cute Cat](/assets/images/IMG-4202.JPG)
 
-<br>
+![San Bearnardino](/assets/images/IMG-4115.jpg)
+
+![Food](/assets/images/FullSizeR.jpeg)
+
+![Pretty Sky](/assets/images/IMG-4661.jpg)
+
+<br><br>
 ## Checklist of stuff left to do
 
 - [x] A clear topic
@@ -98,7 +116,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
 - [x] Two headings
 - [x] Link to another webpage
 - [x] Modify CSS  
-- [ ] Add JS elements
+- [x] Add JS elements
 
 <button onclick="resetColorScheme()" id="resetColors" title="Reset original page color scheme">Reset original page color scheme</button>
 <br>
@@ -178,7 +196,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
   
 </style>
 <audio id="whooshAudio">
-        <source src="https://github.com/perryH0123/ApCompSciWebsite/blob/gh-pages/assets/audio/sfx-whoosh4.mp3"
+        <source src="https://github.com/perryH0123/Personal-Portfolio/gh-pages/assets/audio/sfx-whoosh4.mp3"
                 type="audio/mp3">
    Your browser does not support the audio element.
 </audio>
@@ -252,7 +270,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
     
     async function resetColorScheme() {
         const colorBtn = document.getElementById("resetColors");
-        //const audio = new Audio('https://github.com/perryH0123/ApCompSciWebsite/blob/gh-pages/assets/audio/sfx-whoosh4.mp3');
+        //const audio = new Audio('https://github.com/perryH0123/Personal-Portfolio/gh-pages/assets/audio/sfx-whoosh4.mp3');
         document.getElementById("whooshAudio").play();
         /*const audio = document.getElementById("whooshAudio");
         const playPromise = audio.play();
@@ -304,3 +322,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
     }
  
 </script>
+    
+## Want to get in touch?
+Email: exampleemail@gmail.com
+Phone: (555) 555-5555
