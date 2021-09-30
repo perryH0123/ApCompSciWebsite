@@ -156,7 +156,6 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
      }    
      
     #reloadSuggestion {
-        display: none;
         position: fixed;
         opacity: 0.6;
         bottom: 20px;
@@ -170,6 +169,10 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
         border-radius: 5px;
         font-size: 14px;
         color: white;
+    }
+    
+    #reloadSuggestion p {
+        display: none;
     }
   
 </style>
@@ -286,7 +289,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
           reversePageScroll();
           await sleep(2000);
           changeColors();
-          document.getElementById("reloadSuggestion").styles.display = "block";
+          document.getElementById("reloadText").styles.display = "block";
        
         //alert("work in progress");
      }
