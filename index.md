@@ -246,7 +246,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
 
             const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
             for(j=0; j<headings.length; j++){
-                if (headings[j].style.color != "#ffffff"){
+                if (headings[j].style.color == "#196794"){
                     headings[j].style.transition = "color 3s linear";
                     headings[j].style.color = "#159957";
                 }
