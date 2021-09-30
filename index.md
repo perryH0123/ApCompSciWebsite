@@ -171,10 +171,6 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
         font-size: 14px;
         color: white;
     }
-    
-    #reloadSuggestion p {
-        display: none;
-    }
   
 </style>
 <audio id="whooshAudio">
@@ -290,7 +286,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
           reversePageScroll();
           await sleep(2000);
           changeColors();
-          document.getElementById("reloadSuggestion").styles.display = "block";
+          document.getElementById("reloadSuggestion").style.display = "block";
        
         //alert("work in progress");
      }
