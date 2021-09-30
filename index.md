@@ -11,7 +11,7 @@ Here, you'll find a small listing of my personal attributes.
 
 <button onclick="topFunction()" id="topButton" title="Go to top">Back to top</button>
 <div id="debug"><p id="debugText">0</p></div>
-<div id="reloadSuggestion"><p id="reloadText">Reload the page to revert the colors back to the original customized set.</p></div>
+<div id="reloadsuggestion"><p id="reloadtext">Reload the page to revert the colors back to the original customized set.</p></div>
 
 
 ## Languages
@@ -156,7 +156,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
         background: #636363;
      }    
      
-    #reloadSuggestion > p {
+    #reloadsuggestion {
         display: none;
         position: fixed;
         opacity: 0.6;
@@ -285,8 +285,9 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
         }
           reversePageScroll();
           await sleep(2000);
-          changeColors();
           document.getElementById("reloadSuggestion").style.display = "block";
+          changeColors();
+          
        
         //alert("work in progress");
      }
