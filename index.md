@@ -324,5 +324,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
 </script>
     
 ## Want to get in touch?
+
 Email: exampleemail@gmail.com
+    
 Phone: (555) 555-5555
