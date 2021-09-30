@@ -23,7 +23,7 @@ Here, you'll find a small listing of my personal attributes.
         left: 20%;
         right: 20%;
         z-index: 99;
-        padding: 5px;
+        padding: 5px 5px 5px 5px;
         border: none;
         outline: none;
         background-color: #808080;
