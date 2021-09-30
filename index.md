@@ -295,7 +295,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
         const currentDay = new Date();
         const currentMonth = currentDay.getMonth() + 1;
         const currentDate = currentDay.getDate();
-        document.getElementById("neverContent").innerHTML = `Never ${"ever ".repeat(currentMonth)}will I ${"ever ".repeat(currentDate)use Github's text editor to write code again.`;
+        document.getElementById("neverContent").innerHTML = `Never ${"ever ".repeat(currentMonth)}will I ${"ever ".repeat(currentDate)}use Github's text editor to write code again.`;
     }
  
 </script>
