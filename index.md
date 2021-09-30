@@ -11,7 +11,7 @@ Here, you'll find a small listing of my personal attributes.
 
 <button onclick="topFunction()" id="topButton" title="Go to top">Back to top</button>
 <div id="debug"><p id="debugText">0</p></div>
-<div id="reloadsuggestion"><p id="reloadtext">Reload the page to revert the colors back to the original customized set.</p></div>
+<div id="reloadsuggestion"><p id="reloadtext" style="opacity: 1;">Reload the page to revert the colors back to the original customized set.</p></div>
 
 <style>
     #reloadsuggestion {
@@ -20,9 +20,10 @@ Here, you'll find a small listing of my personal attributes.
         position: fixed;
         opacity: 0.6;
         bottom: 20px;
-        margin: auto;
+        left: 25%;
+        right: 25%;
         z-index: 99;
-        padding: 15px;
+        padding: 5px;
         border: none;
         outline: none;
         background-color: #808080;
