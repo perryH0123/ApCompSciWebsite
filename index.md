@@ -223,7 +223,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
     
     async function resetColorScheme() {
         const colorBtn = document.getElementById("resetColors");
-        const audio = new Audio('ApCompSciWebsite/assets/audio/sfx-whoosh4.mp3');
+        const audio = new Audio('https://github.com/perryH0123/ApCompSciWebsite/blob/gh-pages/assets/audio/sfx-whoosh4.mp3');
         audio.play();
         colorBtn.innerHTML = "おまえは もう しんでる"
         await sleep(1000);
@@ -246,7 +246,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
 
             const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
             for(j=0; j<headings.length; j++){
-                if (j > 2){
+                if (j > 1){ //ignores first 2 headings
                     headings[j].style.transition = "color 3s linear";
                     headings[j].style.color = "#159957";
                 }
