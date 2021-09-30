@@ -249,7 +249,7 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
     async function resetColorScheme() {
         const colorBtn = document.getElementById("resetColors");
         //const audio = new Audio('https://github.com/perryH0123/ApCompSciWebsite/blob/gh-pages/assets/audio/sfx-whoosh4.mp3');
-        document.getElementById("whooshAudio).play();
+        document.getElementById("whooshAudio").play();
         /*const audio = document.getElementById("whooshAudio");
         const playPromise = audio.play();
         if (playPromise !== undefined){
