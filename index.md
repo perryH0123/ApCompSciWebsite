@@ -13,6 +13,25 @@ Here, you'll find a small listing of my personal attributes.
 <div id="debug"><p id="debugText">0</p></div>
 <div id="reloadsuggestion"><p id="reloadtext">Reload the page to revert the colors back to the original customized set.</p></div>
 
+<style>
+    #reloadsuggestion {
+    /* lmao i reached the byte limit with the other style tag */
+        display: none;
+        position: fixed;
+        opacity: 0.6;
+        bottom: 20px;
+        margin: auto;
+        z-index: 99;
+        padding: 15px;
+        border: none;
+        outline: none;
+        background-color: #808080;
+        border-radius: 5px;
+        font-size: 14px;
+        color: white;
+    }
+</style>
+
 
 ## Languages
 
@@ -155,22 +174,6 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
      #resetColors:hover {
         background: #636363;
      }    
-     
-    #reloadsuggestion {
-        display: none;
-        position: fixed;
-        opacity: 0.6;
-        bottom: 20px;
-        margin: auto;
-        z-index: 99;
-        padding: 15px;
-        border: none;
-        outline: none;
-        background-color: #808080;
-        border-radius: 5px;
-        font-size: 14px;
-        color: white;
-    }
   
 </style>
 <audio id="whooshAudio">
