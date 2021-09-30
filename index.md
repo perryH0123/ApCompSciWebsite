@@ -35,10 +35,6 @@ Welcome to my portfolio.
         font-size: 14px;
         color: white;
     }
-    
-    html {
-        scroll-behavior: smooth;
-    }
 </style>
 
 
@@ -203,7 +199,7 @@ Phone: (555) 555-5555
   
 </style>
 <audio id="whooshAudio">
-        <source src="https://github.com/perryH0123/Personal-Portfolio/gh-pages/assets/audio/sfx-whoosh4.mp3"
+        <source src="/assets/audio/sfx-whoosh4.mp3"
                 type="audio/mp3">
    Your browser does not support the audio element.
 </audio>
@@ -277,7 +273,7 @@ Phone: (555) 555-5555
     
     async function resetColorScheme() {
         const colorBtn = document.getElementById("resetColors");
-        //const audio = new Audio('https://github.com/perryH0123/Personal-Portfolio/gh-pages/assets/audio/sfx-whoosh4.mp3');
+        //const audio = new Audio('/assets/audio/sfx-whoosh4.mp3');
         document.getElementById("whooshAudio").play();
         /*const audio = document.getElementById("whooshAudio");
         const playPromise = audio.play();
