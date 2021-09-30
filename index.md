@@ -109,6 +109,13 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
 ![Pretty Sky](/assets/images/IMG-4661.jpg)
 
 <br><br>
+
+## Want to get in touch?
+
+Email: exampleemail@gmail.com
+    
+Phone: (555) 555-5555
+
 ## Checklist of stuff left to do
 
 - [x] A clear topic
@@ -323,8 +330,4 @@ For more details see [the full project](https://replit.com/@PerryHan/Store-Finis
  
 </script>
     
-## Want to get in touch?
 
-Email: exampleemail@gmail.com
-    
-Phone: (555) 555-5555
